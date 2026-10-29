@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="2" customClass="MyCell">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CM-n4-36m">
+                        <rect key="frame" x="5" y="5" width="372" height="190"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ONy-3d-G9i">
+                                <rect key="frame" x="5" y="5" width="362" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oU4-Qb-TZR">
+                                        <rect key="frame" x="0.0" y="0.0" width="362" height="155"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALM-oh-Neu">
+                                        <rect key="frame" x="0.0" y="160" width="362" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="v3A-HO-bEN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ONy-3d-G9i" secondAttribute="trailing" constant="5" id="5jD-Ps-dvd"/>
+                            <constraint firstItem="ONy-3d-G9i" firstAttribute="top" secondItem="2CM-n4-36m" secondAttribute="top" constant="5" id="DBR-fQ-vue"/>
+                            <constraint firstItem="ONy-3d-G9i" firstAttribute="leading" secondItem="2CM-n4-36m" secondAttribute="leading" constant="5" id="Ith-y3-BsM"/>
+                            <constraint firstAttribute="bottom" secondItem="ONy-3d-G9i" secondAttribute="bottom" constant="5" id="cxw-Re-m8c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2CM-n4-36m" secondAttribute="bottom" constant="5" id="7vW-5a-zhP"/>
+                <constraint firstAttribute="trailing" secondItem="2CM-n4-36m" secondAttribute="trailing" constant="5" id="DoD-dC-20z"/>
+                <constraint firstItem="2CM-n4-36m" firstAttribute="top" secondItem="2" secondAttribute="top" constant="5" id="i5G-Pd-8ds"/>
+                <constraint firstItem="2CM-n4-36m" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="5" id="j0H-kW-N84"/>
+            </constraints>
+            <size key="customSize" width="135" height="111"/>
+            <connections>
+                <outlet property="back_view" destination="2CM-n4-36m" id="7Et-ag-7hL"/>
+                <outlet property="imgeDataArray" destination="oU4-Qb-TZR" id="06R-re-1QU"/>
+                <outlet property="lblTitle" destination="ALM-oh-Neu" id="yvf-7U-OEU"/>
+            </connections>
+            <point key="canvasLocation" x="-38.399999999999999" y="-480.35982008995506"/>
+        </collectionViewCell>
+    </objects>
+</document>
